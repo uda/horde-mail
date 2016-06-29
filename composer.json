@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-mail",
+    "name": "x59/horde-mail",
     "description": "Horde Mail Library",
     "type": "library",
     "homepage": "https://pear.horde.org",
@@ -16,22 +16,25 @@
     "repositories": [
         {
             "type": "pear",
-            "url": "https://pear.horde.org"
+            "url": "http://pear.horde.org"
         }
     ],
+    "autoload": {
+        "classmap": "lib/"
+    },
     "require": {
         "php": ">=5.3.0,<=8.0.0alpha1",
-        "pear-pear.horde.org/Horde_Exception": ">=2.0.0@stable,<=3.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Idna": ">=1.0.0@stable,<=2.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Mime": ">=2.0.0@stable,<=3.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Stream_Filter": ">=2.0.0@stable,<=3.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Translation": ">=2.2.0@stable,<=3.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Util": ">=2.0.0@stable,<=3.0.0alpha1@stable"
+        "x59/horde-exception": ">=2.0.0@stable,<=3.0.0alpha1@stable",
+        "x59/horde-idna": ">=1.0.0@stable,<=2.0.0alpha1@stable",
+        "x59/horde-mime": ">=2.0.0@stable,<=3.0.0alpha1@stable",
+        "x59/horde-stream-filter": ">=2.0.0@stable,<=3.0.0alpha1@stable",
+        "x59/horde-translation": ">=2.2.0@stable,<=3.0.0alpha1@stable",
+        "x59/horde-util": ">=2.0.0@stable,<=3.0.0alpha1@stable"
     },
     "suggest": {
         "pear-pear.horde.org/Horde_Smtp": ">=1.7.0@stable,<=2.0.0alpha1@stable",
         "pear-pear.horde.org/Horde_Stream_Wrapper": ">=2.1.0@stable,<=3.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Test": ">=2.1.0@stable,<=3.0.0alpha1@stable",
+        "x59/horde-test": ">=2.1.0@stable,<=3.0.0alpha1@stable",
         "pear-pear.php.net/Net_DNS2": "*",
         "pear-pear.php.net/Net_SMTP": ">=1.6.0@stable"
     }
