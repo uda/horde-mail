@@ -20,7 +20,7 @@
         }
     ],
     "autoload": {
-        "classmap": "lib/"
+        "classmap": ["lib/"]
     },
     "require": {
         "php": ">=5.3.0,<=8.0.0alpha1",
